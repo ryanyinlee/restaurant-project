@@ -74,8 +74,8 @@ Like said before, if we can't agree then we will settle it in the Thunder Dome i
 
 - JWatts: Jordan: Open, just msg on slack. 30 min response time.
 - JChoi: 9am - 1 pm and after hours when needed and scheduled
-- BThornburg: Brian: available from 9 am - 12 pm pst except for saturdays where i have a window from noon-2pm and then available after 8pm
-- RLee: 9AM-11:59PM
+- BThornburg: Brian: available from 9 am - 11:59PM pst except for saturdays where i have a window from noon-2pm and then available after 8pm
+- RLee: 9AM-11:59PM PST
 - MMetcalf: 9am-6pm
 
 *What platforms will you use to communicate (ie. Slack, phone …)?*
