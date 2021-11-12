@@ -77,3 +77,78 @@ Like said before, if we can't agree then we will settle it in the Thunder Dome i
 - BThornburg: Brian: available from 9 am - 12 pm pst except for saturdays where i have a window from noon-2pm and then available after 8pm
 - RLee: 9AM-12PM
 - MMetcalf: 9am-6pm
+
+*What platforms will you use to communicate (ie. Slack, phone …)?*
+
+We will be using Slack as we have it on mobile apps and the Remo labspace for work time.
+
+*How often will you take breaks?*
+
+The group consensus was that we take them as often as needed but to not overdo it. 12-1 Lunch and 6-7-ish for dinner if doing long days.
+
+*How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?*
+
+Speak up when you have an thought, open consideration of all ideas.
+
+We could schedule everyone has a 5 min window to say something in a set order like the lecture questions.
+
+No judgement within the group, open minded to any ideas and questions.
+
+*What is your plan if you start to fall behind?*
+
+Stay in communication with where you are at and if there is anything we are struggling with.
+
+Let the group the know and ask for help and communicate with the entire team.
+
+*How will you communicate after hours and on the weekend?*
+
+Slack/slack mobile.
+
+*What is your strategy for ensuring everyone’s voice is heard?*
+
+Speak up when you have an thought, open consideration of all ideas. If needed, we can give everyone a few minutes to talk about whatever they want.
+
+Be sure to get everyone's opinion before implementing a feature.
+
+### Work Plan
+
+*How you will identify tasks, assign tasks, know when they are complete, and manage work in general?*
+
+Right now we are using Trello to identify, assign, and mark complete.
+
+*What project management tool will be used?*
+
+Trello.
+
+### Git Process
+
+*What components of your project will live on GitHub?*
+
+All componenents should be on GitHub.
+
+*How will you share the repository with your teammates?*
+
+It will be on the same repo with collab privileges: https://github.com/ryanyinlee/restaurant-project
+
+*What is your Git flow?*
+
+We will ACP every hour to a test branch. We will do the merge every morning at 9am just before our scrum..
+
+*Will you be using a Pull Request review workflow? If so, consider:*
+*How many people must review a PR?*
+
+Two people minimum.
+
+*Who merges PRs?*
+
+Jordan Watts will be responsible.
+
+*How often will you merge?*
+
+In the morning before SCRUM meeting.
+
+*How will you communicate that it’s time to merge?*
+
+At the morning meeting.
+
+
