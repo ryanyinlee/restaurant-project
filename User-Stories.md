@@ -8,4 +8,4 @@
 
 ## As a user I want customers to be able to browse and purchase our merchandise from the comfort of their own home if they wish to do so.
 
-## As a manager I want to be able to know the busy times so I know when to employ more staffx
+## As a manager I want to be able to know the busy times so I know when to employ more staff.
