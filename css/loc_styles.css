@@ -1,0 +1,143 @@
+body {
+    background-color: beige;
+}
+
+#map {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+#allStores {
+    display: grid;
+    grid-template-columns:  10% 12% 5% 12% 5% 12% 5% 12% 5% 12% 10%;
+    grid-template-rows: 15% 30% 55%;
+    border: 3px solid black;
+    width: 90%;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+#columnTwoTop {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid black;
+}
+
+#columnFourTop {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid black;
+}
+
+#columnSixTop {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid black;
+}
+
+#columnEightTop {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid black;
+}
+
+#columnTenTop {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid black;
+}
+
+#columnTwoMiddle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 1px solid black;
+}
+
+#columnFourMiddle {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 1px solid black;
+}
+
+#columnSixMiddle {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 1px solid black;
+}
+
+#columnEightMiddle {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 1px solid black;
+}
+
+#columnTenMiddle {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 1px solid black;
+}
+
+#columnTwoBottom {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border: 1px solid black;
+}
+
+#columnFourBottom {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border: 1px solid black;
+}
+
+#columnSixBottom {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border: 1px solid black;
+}
+
+#columnEightBottom {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border: 1px solid black;
+}
+
+#columnTenBottom {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border: 1px solid black;
+}
