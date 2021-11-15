@@ -12,4 +12,13 @@ Test: Make sure that the food populates a reasonable price, along with an approp
 
 
 ## As a manager I want to be able to know the busy times so I know when to employ more staff.
-Ensure that heatmap displays customer count, allowing for employment calculations to be done.
+
+
+
+Ryan - Backend JS for Management Portal
+Michael Metcalf - Locations
+Jacob - Photos and creation of Menu Page
+Brian - CSS Styling
+Jordan W - Main Page , Nav Bar 
+
+
