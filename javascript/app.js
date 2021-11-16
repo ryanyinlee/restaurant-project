@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 // Object constructor for regular menu items.
 function MenuObject(name, description, price) {
     this.name = name;
@@ -91,6 +89,8 @@ new MenuObject('French Fried Toast', 'avec queso con huevos', 12);
 checkForSubmit();
 // Renders the chart.
 renderList();
+
+
 // Code Storage Below ==============================================================================
 
 
