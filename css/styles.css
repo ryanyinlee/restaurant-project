@@ -59,7 +59,7 @@ nav {
     text-align: right;
 }
 
-a {
+nav a {
     position: relative;
     color: #CAE2D9;
     padding-left: 2rem;
@@ -71,7 +71,7 @@ a {
     
 }
 
-a:hover {
+nav a:hover {
     color: #F7F7F2;
     font-size: 10.5pt;
 }
@@ -135,7 +135,7 @@ p {
     color: black;
 }
 
-img {
+header img {
     float: left;
     
 }

@@ -10,17 +10,6 @@ const date = new Date();
 const day = date.getUTCDay();
 const hours = date.getHours();
 const hour = date.getUTCHours();
-// const trueDate = date - (date.getTimezoneOffset()/60);
-// const nowDate = trueDate.toDateString();
-
-// const day = trueDate.getDay();
-// const hour = trueDate.getHours();
-console.log(date, day, hour);
-console.log(hours, hour);
-
-
-
-
 
 function openYetSeattle() {
     if (day == '0' || day == '6') {
@@ -38,7 +27,7 @@ function openYetSeattle() {
         }
     }
 }
-//GMT-6
+
 function openYetAustin() {
     if (day == '0' || day == '6') {
         if (hour >= 15 && hour < 20) {
