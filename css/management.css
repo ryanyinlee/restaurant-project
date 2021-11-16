@@ -1,0 +1,25 @@
+li {
+    list-style-type: none;
+  }
+
+  h1 {
+    font-size: 36pt;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  main {
+    width: 840px;
+    display: block;    
+    margin: 0 auto;
+  }
+
+  ul li {
+    display: flex;
+    
+    padding: 3rem;
+    margin: 0;
+    text-align: center;
+  }
+  
