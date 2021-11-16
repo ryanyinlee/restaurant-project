@@ -1,6 +1,6 @@
 # restaurant-project
 
-Team Members: Jordan Watts (JWatts), Jacob Choi (JChoi), Mike Metcalf (MMetcalf), Brian Thornburg (BThornburg), Ryan Lee (RLee)
+Team Members: Jacob Choi (JChoi), Mike Metcalf (MMetcalf), Brian Thornburg (BThornburg), Ryan Lee (RLee)
 
 This project is a demonstration of a website for a restaurant that will have the following pages:
 
@@ -12,4 +12,4 @@ Locations Page: A place for a chain to show different locations, or for a single
 
 Management Page: A page where the menu can be managed using DOM, entry boxes, as well as statistics on sales.
 
-[Domain Model](domain_model.png)
+[Domain Model](images/domain_model.png)
