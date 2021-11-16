@@ -1,0 +1,218 @@
+#map {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+#allStores {
+    display: grid;
+    grid-template-columns:  10% 12% 5% 12% 5% 12% 5% 12% 5% 12% 10%;
+    grid-template-rows: 25% 45% 30%;
+    width: 90%;
+    height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+#columnTwoTop {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-bottom: 3px solid black;
+}
+
+#columnFourTop {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-bottom: 3px solid black;
+}
+
+#columnSixTop {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-bottom: 3px solid black;
+}
+
+#columnEightTop {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-bottom: 3px solid black;
+}
+
+#columnTenTop {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-bottom: 3px solid black;
+}
+
+#columnTwoMiddle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-bottom: 3px solid black;
+}
+
+#columnFourMiddle {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-bottom: 3px solid black;
+}
+
+#columnSixMiddle {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-bottom: 3px solid black;
+}
+
+#columnEightMiddle {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-bottom: 3px solid black;
+}
+
+#columnTenMiddle {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-bottom: 3px solid black;
+}
+
+#columnTwoBottom {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border-bottom: 3px solid black;
+}
+
+#columnFourBottom {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border-bottom: 3px solid black;
+}
+
+#columnSixBottom {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border-bottom: 3px solid black;
+}
+
+#columnEightBottom {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border-bottom: 3px solid black;
+}
+
+#columnTenBottom {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border-bottom: 3px solid black;
+}
+
+.cities {
+    text-decoration: underline overline black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+td {
+    text-align: center;
+    width:10%
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#pinSeattle {
+    position: relative;
+    width: 50%;
+    bottom: 42.25rem;
+    left: 26.6rem;
+}
+
+#pinAustin {
+    position: relative;
+    width: 50%;
+    bottom: 20rem;
+    left: 50rem;
+}
+
+#pinTampa {
+    position: relative;
+    width: 50%;
+    bottom: 24.25rem;
+    left: 68.25rem;
+}
+
+#pinChicago {
+    position: relative;
+    width: 50%;
+    bottom: 50.5em;
+    left: 60.25rem;
+}
+
+#pinBoston {
+    position: relative;
+    width: 50%;
+    bottom: 60.5rem;
+    left: 77rem;
+}
+
+.columnTwoTop:hover #pinSeattle {
+    border: 5px solid red;
+    color: red;
+    width: 60%;
+    box-shadow: red inset;
+}
+
+.columnFourTop:hover #pinAustin {
+    border: 5px solid red;
+    color: red;
+    width: 60%;
+    box-shadow: red inset;
+}
+
+.columnFourMiddle:hover #pinAustin {
+    border: 5px solid red;
+    color: red;
+    width: 60%;
+    box-shadow: red inset;
+}
+
+.columnFourBottom:hover #pinAustin {
+    border: 5px solid red;
+    color: red;
+    width: 60%;
+    box-shadow: red 10px;
+}
