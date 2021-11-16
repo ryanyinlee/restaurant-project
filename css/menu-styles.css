@@ -4,6 +4,36 @@
     box-sizing: border-box
 }
 
+#topLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow:#1f3133 ;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    
+    
+}
+nav {
+    display: block;
+    background: linear-gradient(#77B5BB, #37686d);
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
 }
@@ -55,4 +85,16 @@ body {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid white;
+}
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    align-content: center;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../images/toastyFoot.png);
 }
