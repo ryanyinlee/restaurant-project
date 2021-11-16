@@ -11,28 +11,43 @@ function MenuObject(name, description, price) {
 // Array stores menu objects.
 MenuObject.all = [];
 
-// This function accepts the submit form and puts it into local storage 
+// This function accepts the submit form and puts it into the string
 function clickSave(event) {
-    var itemName = getElementById('itemName');
-    var itemDescription = getElementById('itemDescription');
-    var itemPrice = getElementById('itemPrice');
-    
+    event.preventDefault();
+    console.log('button were pushed');
+    var itemName = document.getElementById('itemName').value;
+    var itemDescription = document.getElementById('itemDescription').value;
+    var itemPrice = document.getElementById('itemPrice').value;
+
     new MenuObject(itemName, itemDescription, itemPrice);
-    }
+    console.log(MenuObject.all);
+    clearTemp();
+    renderList();
+    
+}
 
 
 // Event listener submit.
 function checkForSubmit() {
-    const clickLocation = document.getElementById('menuSubmit');
-    clickLocation.addEventListener('submit', clickSave);
-    
+    const clickLocation = document.getElementById('menuSubmitButton');
+    clickLocation.addEventListener('click', clickSave);
 
 }
+
+// Remove all of the rows (tr) in the cart table (tbody).
+function clearTemp() {
+    const tbodyElem = document.getElementById('menuAdd');
+    while(tbodyElem.firstChild) {
+      tbodyElem.removeChild(tbodyElem.firstChild);
+    }
+  }
+
+
 
 
 
 // localStorage for new input. Stringifies it.
-function storeMenu() {
+MenuObject.prototype.storeMenu = function () {
 
     const menuJSON = JSON.stringify(MenuObject.all);
     localStorage.setItem('menuSave', menuJSON);
@@ -80,15 +95,24 @@ function renderList() {
 
 }
 
-//Test menu item
-new MenuObject('French Fried Toast', 'avec queso con huevos', 12);
 
+// Method to remove one item from the menu array.
+MenuObject.prototype.removeItem = function (itemIndex) {
+    
+    MenuObject.all.splice(itemIndex, 1);
+}
+
+
+//Test menu item
+//new MenuObject('French Fried Toast', 'avec queso con huevos', 12);
+// renderList();
 
 
 // Starting Functions
+
 checkForSubmit();
 // Renders the chart.
-renderList();
+
 
 
 // Code Storage Below ==============================================================================
