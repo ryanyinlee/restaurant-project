@@ -1,7 +1,3 @@
-body {
-    background-color: beige;
-}
-
 #map {
     width: 50%;
     display: block;
@@ -13,12 +9,13 @@ body {
 #allStores {
     display: grid;
     grid-template-columns:  10% 12% 5% 12% 5% 12% 5% 12% 5% 12% 10%;
-    grid-template-rows: 20% 40% 40%;
+    grid-template-rows: 25% 45% 30%;
     width: 90%;
-    height: 20rem;
+    height: 25rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
+    margin-bottom: 3%;
 }
 
 #columnTwoTop {
@@ -26,7 +23,7 @@ body {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnFourTop {
@@ -34,7 +31,7 @@ body {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnSixTop {
@@ -42,7 +39,7 @@ body {
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 1;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnEightTop {
@@ -50,7 +47,7 @@ body {
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 1;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnTenTop {
@@ -58,7 +55,7 @@ body {
     grid-column-end: 11;
     grid-row-start: 1;
     grid-row-end: 1;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnTwoMiddle {
@@ -66,7 +63,7 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnFourMiddle {
@@ -74,7 +71,7 @@ body {
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 2;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnSixMiddle {
@@ -82,7 +79,7 @@ body {
     grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 2;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnEightMiddle {
@@ -90,7 +87,7 @@ body {
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 2;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnTenMiddle {
@@ -98,7 +95,7 @@ body {
     grid-column-end: 11;
     grid-row-start: 2;
     grid-row-end: 2;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnTwoBottom {
@@ -106,7 +103,7 @@ body {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 3;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnFourBottom {
@@ -114,7 +111,7 @@ body {
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 3;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnSixBottom {
@@ -122,7 +119,7 @@ body {
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 3;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnEightBottom {
@@ -130,7 +127,7 @@ body {
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 3;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 #columnTenBottom {
@@ -138,13 +135,13 @@ body {
     grid-column-end: 11;
     grid-row-start: 3;
     grid-row-end: 3;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 .cities {
     text-decoration: underline overline black;
     text-align: center;
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 td {
@@ -155,4 +152,67 @@ td {
 a {
     text-decoration: none;
     color: black;
+}
+
+#pinSeattle {
+    position: relative;
+    width: 50%;
+    bottom: 42.25rem;
+    left: 26.6rem;
+}
+
+#pinAustin {
+    position: relative;
+    width: 50%;
+    bottom: 20rem;
+    left: 50rem;
+}
+
+#pinTampa {
+    position: relative;
+    width: 50%;
+    bottom: 24.25rem;
+    left: 68.25rem;
+}
+
+#pinChicago {
+    position: relative;
+    width: 50%;
+    bottom: 50.5em;
+    left: 60.25rem;
+}
+
+#pinBoston {
+    position: relative;
+    width: 50%;
+    bottom: 60.5rem;
+    left: 77rem;
+}
+
+.columnTwoTop:hover #pinSeattle {
+    border: 5px solid red;
+    color: red;
+    width: 60%;
+    box-shadow: red inset;
+}
+
+.columnFourTop:hover #pinAustin {
+    border: 5px solid red;
+    color: red;
+    width: 60%;
+    box-shadow: red inset;
+}
+
+.columnFourMiddle:hover #pinAustin {
+    border: 5px solid red;
+    color: red;
+    width: 60%;
+    box-shadow: red inset;
+}
+
+.columnFourBottom:hover #pinAustin {
+    border: 5px solid red;
+    color: red;
+    width: 60%;
+    box-shadow: red 10px;
 }
