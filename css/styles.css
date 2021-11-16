@@ -1,0 +1,45 @@
+nav {
+    color: black;
+    display: inline-block;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+
+}
+
+body {
+    background-color: #CAE2D9
+}
+
+footer {
+    background-color: red;
+    height: 100px;
+    width: 900px;
+    
+}
+
+.toasty {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+header {
+    background-color: salmon;
+    height: 100px;
+    
+}
+
+p {
+    color: black;
+}
+
+img {
+    float: left;
+    
+}
+

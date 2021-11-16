@@ -111,3 +111,4 @@ MenuObject.prototype.render = function (side) {
 
 
 }
+

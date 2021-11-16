@@ -11,3 +11,5 @@ Menu Page: A page for a modifiable menu that shows the food items for sale, pric
 Locations Page: A place for a chain to show different locations, or for a single restaurant to show directions and hours.
 
 Management Page: A page where the menu can be managed using DOM, entry boxes, as well as statistics on sales.
+
+[Domain Model](domain_model.png)
