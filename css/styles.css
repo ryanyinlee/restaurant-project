@@ -18,18 +18,11 @@ color:
 }
 
 #topLogo {
-    display: block;
+    display: inline-block;
     height: 100px;
     width: 100px;
 }
 
-/* header {
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-} */
 
 nav {
     display: block;
@@ -39,19 +32,16 @@ nav {
     text-align: center;
 }
 
-a {
+nav a {
     position: relative;
     color: #CAE2D9;
-    /* padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: 1rem; */
     font-family: 'Nunito', sans-serif;
     font-size: 10pt;
     transition: .2s ease-in-out;
     
 }
 
-a:hover {
+nav a:hover {
     color: #F7F7F2;
     font-size: 10.5pt;
 }
@@ -69,6 +59,10 @@ div {
     font-family: 'Nunito', sans-serif;
 }
 footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    align-content: center;
+    text-align: center;
     display: block;
     width: 100%;
     background-repeat: no-repeat;
@@ -76,4 +70,6 @@ footer {
     background-image: url(../images/toastyFoot.png);
 }
 
+    
+.icon {    display: flex;    justify-content: flex;    align-items: center;}
 
