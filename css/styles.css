@@ -18,43 +18,23 @@ color:
 }
 
 #topLogo {
-    display: inline-block;
+    display: block;
     height: 100px;
     width: 100px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    box-shadow:#1f3133 ;
 }
 
-header {
-    display: inline-block;
+/* header {
+    display: block;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
-    
-    
-}
+} */
 
-p {
-    display: inline-block;
-    color: #5B3B20;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-family: 'Nunito', sans-serif;
-    
-}
 nav {
     display: block;
     background: linear-gradient(#77B5BB, #37686d);
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     justify-content: space-between;
     text-align: right;
 }
@@ -62,9 +42,9 @@ nav {
 a {
     position: relative;
     color: #CAE2D9;
-    padding-left: 2rem;
+    /* padding-left: 2rem;
     padding-right: 2rem;
-    margin-right: 1rem;
+    margin-right: 1rem; */
     font-family: 'Nunito', sans-serif;
     font-size: 10pt;
     transition: .2s ease-in-out;
@@ -86,15 +66,9 @@ body {
     background-image: url(../images/toastyBack.png);
 }
 div {
-    margin: 2rem;
-    text-align: center;
     font-family: 'Nunito', sans-serif;
 }
 footer {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    align-content: center;
-    text-align: center;
     display: block;
     width: 100%;
     background-repeat: no-repeat;
@@ -102,32 +76,4 @@ footer {
     background-image: url(../images/toastyFoot.png);
 }
 
-.nav li {
-    display: inline-block;
-    list-style-type: none;
-    font-size: 20px;
-
-}
-
-body {
-    background-color: #CAE2D9
-}
-
-
-
-.toasty {
-    font-size: x-large;
-    font-weight: 600;
-}
-
-
-
-p {
-    color: black;
-}
-
-img {
-    float: left;
-    
-}
 
