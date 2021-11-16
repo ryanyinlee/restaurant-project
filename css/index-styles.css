@@ -1,0 +1,70 @@
+colorPalette{
+color: 
+#5B3B20 'brown'
+#D17C47 'rust'
+#EBD065 'yellow'
+#F5ECBC 'pale yellow'
+#F7F7F2 'white'
+#D8D5CB 'grey'
+#CAE2D9 'light teal'
+#77B5BB 'teal'
+#37686d 'dark teal'
+#1f3133 'darkest teal'}
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+#topLogo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+header {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;  
+}
+
+p {
+    display: inline-block;
+    color: #5B3B20;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Nunito', sans-serif;
+    
+}
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    
+}
+
+div {
+    margin: 2rem;
+    text-align: center;
+}
+footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    align-content: center;
+    text-align: center;
+}
+
+
+
