@@ -1,6 +1,6 @@
 # restaurant-project
 
-Team Members: Jordan Watts (JWatts), Jacob Choi (JChoi), Mike Metcalf (MMetcalf), Brian Thornburg (BThornburg), Ryan Lee (RLee)
+Team Members: Jacob Choi (JChoi), Mike Metcalf (MMetcalf), Brian Thornburg (BThornburg), Ryan Lee (RLee)
 
 This project is a demonstration of a website for a restaurant that will have the following pages:
 
