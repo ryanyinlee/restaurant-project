@@ -1,32 +1,33 @@
 'use strict';
 
-// Array stores menu objects.
-MenuObject.all = [];
+
 
 // Object constructor for regular menu items.
 function MenuObject(name, description, price) {
     this.name = name;
     this.description = description;
     this.price = price;
-    MenuObject.all.push(this);
+    MenuObject.all.push(this); // Store it.
 }
 
+// Array stores menu objects.
+MenuObject.all = [];
 
 // This function accepts the submit form and puts it into local storage 
 function clickSave(event) {
     var itemName = getElementById('itemName');
     var itemDescription = getElementById('itemDescription');
     var itemPrice = getElementById('itemPrice');
+    
     new MenuObject(itemName, itemDescription, itemPrice);
-    return MenuObject;
-
-}
+    }
 
 
 // Event listener submit.
 function checkForSubmit() {
     const clickLocation = document.getElementById('menuSubmit');
     clickLocation.addEventListener('submit', clickSave);
+    
 
 }
 
@@ -84,11 +85,12 @@ function renderList() {
 //Test menu item
 new MenuObject('French Fried Toast', 'avec queso con huevos', 12);
 
-// Renders the chart.
-renderList();
+
 
 // Starting Functions
 checkForSubmit();
+// Renders the chart.
+renderList();
 // Code Storage Below ==============================================================================
 
 
