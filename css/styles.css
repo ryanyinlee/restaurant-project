@@ -1,4 +1,4 @@
-colorPalette{
+/* colorPalette{
 color: 
 #5B3B20 'brown'
 #D17C47 'rust'
@@ -140,7 +140,10 @@ header img {
     
 }
 
-=======
+======= */
+
+
+colorPalette{
     color: 
     #5B3B20 'brown'
     #D17C47 'rust'
