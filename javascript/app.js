@@ -73,8 +73,7 @@ function loadMenu(event) {
 
     
      
-    clearTemp(); // Clears the preview to add the new items.
-    renderList(); // Renders that list again.
+  
 
 
 }
@@ -114,6 +113,7 @@ function recreateButton() {
 
     const recreateLocation = document.getElementById('recreateMenuButton');
     recreateLocation.addEventListener('click', loadMenu);
+    
 
 }
 
