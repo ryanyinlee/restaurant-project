@@ -1,3 +1,13 @@
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav a {
+    padding-left: 2rem;
+    padding-right: 2rem; 
+}
+
 .title {
     text-align: center;
     margin-bottom: 60px;
@@ -24,6 +34,24 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -140px;
+}
+
+#behindMap {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    opacity: .2;
+    left: 25%;
+    right: 25%;
+    bottom: 5%;
+    z-index: -1;
+    transition: .5s ease;  
+}
+
+#map:hover #behindMap{
+    opacity: 1;
 }
 
 #allStores {
@@ -34,7 +62,7 @@
     height: 25rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -50px;
+    margin-top: 10px;
     margin-bottom: 5%;
 }
 
@@ -89,6 +117,8 @@
     grid-row-start: 2;
     grid-row-end: 2;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.35rem;
 }
 
 #columnFourMiddle {
@@ -97,6 +127,8 @@
     grid-row-start: 2;
     grid-row-end: 2;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.35rem;
 }
 
 #columnSixMiddle {
@@ -105,6 +137,8 @@
     grid-row-start: 2;
     grid-row-end: 2;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.35rem;
 }
 
 #columnEightMiddle {
@@ -113,6 +147,8 @@
     grid-row-start: 2;
     grid-row-end: 2;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.35rem;
 }
 
 #columnTenMiddle {
@@ -121,6 +157,8 @@
     grid-row-start: 2;
     grid-row-end: 2;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.35rem;
 }
 
 #columnTwoBottom {
@@ -129,6 +167,8 @@
     grid-row-start: 3;
     grid-row-end: 3;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.25rem;
 }
 
 #columnFourBottom {
@@ -137,6 +177,8 @@
     grid-row-start: 3;
     grid-row-end: 3;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.25rem;
 }
 
 #columnSixBottom {
@@ -145,6 +187,8 @@
     grid-row-start: 3;
     grid-row-end: 3;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.25rem;
 }
 
 #columnEightBottom {
@@ -153,6 +197,8 @@
     grid-row-start: 3;
     grid-row-end: 3;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.25rem;
 }
 
 #columnTenBottom {
@@ -161,89 +207,45 @@
     grid-row-start: 3;
     grid-row-end: 3;
     border-bottom: 3px solid #37686d;
+    margin-top: 30px;
+    font-size: 1.25rem;
 }
 
 .cities {
-    text-decoration: underline overline #D17C47;
+    text-decoration: underline overline #77B5BB;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 25px;
 }
 
+.cities:hover {
+    color: #77B5BB;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-decoration: underline overline #D17C47;
+    transition: .5s ease-in-out;
+    letter-spacing: 10px;
+}
+
 td {
+    margin: auto;
     text-align: center;
     width:10%
 }
 
 a {
+    margin: auto;
     text-decoration: none;
-    color: black;
-}
-
-#pinSeattle {
-    position: relative;
-    width: 50%;
-    bottom: 39.5rem;
-    left: 27.5rem;
-}
-
-#pinAustin {
-    position: relative;
-    width: 50%;
-    bottom: 20rem;
-    left: 50rem;
-}
-
-#pinTampa {
-    position: relative;
-    width: 50%;
-    bottom: 24.25rem;
-    left: 68.25rem;
-}
-
-#pinChicago {
-    position: relative;
-    width: 50%;
-    bottom: 50.5em;
-    left: 60.25rem;
-}
-
-#pinBoston {
-    position: relative;
-    width: 50%;
-    bottom: 60.5rem;
-    left: 77rem;
-}
-
-.columnTwoTop:hover #pinSeattle {
-    border: 5px solid red;
-    color: red;
-    width: 60%;
-    box-shadow: red inset;
-}
-
-.columnFourTop:hover #pinAustin {
-    border: 5px solid red;
-    color: red;
-    width: 60%;
-    box-shadow: red inset;
-}
-
-.columnFourMiddle:hover #pinAustin {
-    border: 5px solid red;
-    color: red;
-    width: 60%;
-    box-shadow: red inset;
-}
-
-.columnFourBottom:hover #pinAustin {
-    border: 5px solid red;
-    color: red;
-    width: 60%;
-    box-shadow: red 10px;
+    color: #D17C47;
 }
 
 .phone {
-    display: block;
-    padding-top: 25px;
+    font-size: 1.5rem;
+}
+
+.open {
+    margin: auto;
+    margin: 10%;
+    font-weight: 500;
+    font-size: x-large;  
 }
