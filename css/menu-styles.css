@@ -98,3 +98,6 @@ footer {
     background-size: 100% 100%;
     background-image: url(../images/toastyFoot.png);
 }
+
+ 
+.icon {    display: flex;    justify-content: flex;    align-items: center;}
