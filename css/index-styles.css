@@ -65,5 +65,18 @@ footer {
     text-align: center;
 }
 
+#busy-chart-section {
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 
+}
+
+canvas{
+    width:800px !important;
+    height:500px !important;
+  
+  }
 
