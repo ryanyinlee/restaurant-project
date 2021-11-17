@@ -71,14 +71,6 @@ footer {
 }
 
     
-img {
-           width: 300px;
-           height: 300px;
-
-        }
-
-
-    
 .icon {    display: flex;    
     justify-content: flex;    
     align-items: center;
