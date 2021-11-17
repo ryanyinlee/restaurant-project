@@ -101,3 +101,9 @@ footer {
 
  
 .icon {    display: flex;    justify-content: flex;    align-items: center;}
+
+li {
+    
+    list-style-type: none;
+    text-align: center;
+  }
