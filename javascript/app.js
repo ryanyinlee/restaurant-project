@@ -11,6 +11,7 @@ function MenuObject(name, description, price) {
 // Array stores menu objects.
 MenuObject.all = [];
 
+
 // This function accepts the submit form and puts it into the string
 function clickSave(event) {
     event.preventDefault();
@@ -21,10 +22,17 @@ function clickSave(event) {
 
     new MenuObject(itemName, itemDescription, itemPrice);
     console.log(MenuObject.all);
-    clearTemp();
-    renderList();
-    
+
+    clearTemp(); // Clears the preview to add the new items.
+    renderList(); // Renders that list again.
+
+    console.log(localStorage);
+
+    document.forms['menuSubmit'].reset(); // Clears the form for new entry.
+    storeMenu();
+
 }
+
 
 
 // Event listener submit.
@@ -34,42 +42,41 @@ function checkForSubmit() {
 
 }
 
-// Remove all of the rows (tr) in the cart table (tbody).
+// Remove all of the rows (tr) in the cart table (tbody). Clears it out to be refilled.
 function clearTemp() {
     const tbodyElem = document.getElementById('menuAdd');
-    while(tbodyElem.firstChild) {
-      tbodyElem.removeChild(tbodyElem.firstChild);
+    while (tbodyElem.firstChild) {
+        tbodyElem.removeChild(tbodyElem.firstChild);
     }
-  }
-
-
-
+}
 
 
 // localStorage for new input. Stringifies it.
-MenuObject.prototype.storeMenu = function () {
+function storeMenu() {
 
     const menuJSON = JSON.stringify(MenuObject.all);
     localStorage.setItem('menuSave', menuJSON);
 
 }
 // Summon from local storage and parse it back into an object.
-function recreateMenu() {
-
-    const menuJSONRetrieve = localStorage.getItem('menuSave');
-
-    if (menuJSONRetrieve) {
-        let oldMenu = JSON.parse(menuJSONRetrieve);
-
-        for (let i = 0; i < oldMenu.length; i += 1) {
-            oldMenu = oldMenu[i];
-            const reinstantiate = new MenuObject(oldMenu.name, oldMenu.description, oldMenu.price);
-            reinstantiate.name = oldMenu.name;
-            reinstantiate.description = oldMenu.description;
-            reinstantiate.price = oldMenu.price;
-
-        }
+function loadMenu(event) {
+    event.preventDefault();
+    console.log('this recreate button were pushed');
+    
+    const menuItems = JSON.parse(localStorage.getItem('menuSave')); // || []
+    console.log('menuItems: ' + menuItems);
+    console.log(menuItems[0]);
+    
+    for (let i = 0; i < menuItems.length; i += 1) {
+        new MenuObject(menuItems[i].name, menuItems[i].description, menuItems[i].price);
     }
+
+    
+     
+    clearTemp(); // Clears the preview to add the new items.
+    renderList(); // Renders that list again.
+
+
 }
 
 
@@ -98,9 +105,21 @@ function renderList() {
 
 // Method to remove one item from the menu array.
 MenuObject.prototype.removeItem = function (itemIndex) {
-    
+
     MenuObject.all.splice(itemIndex, 1);
 }
+
+
+function recreateButton() {
+
+    const recreateLocation = document.getElementById('recreateMenuButton');
+    recreateLocation.addEventListener('click', loadMenu);
+
+}
+
+
+
+
 
 
 //Test menu item
@@ -111,6 +130,7 @@ MenuObject.prototype.removeItem = function (itemIndex) {
 // Starting Functions
 
 checkForSubmit();
+recreateButton();
 // Renders the chart.
 
 
