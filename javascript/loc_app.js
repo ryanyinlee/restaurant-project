@@ -13,14 +13,14 @@ const hour = date.getUTCHours();
 
 function openYetSeattle() {
     if (day == '0' || day == '6') {
-        if (hour >= 16 && hour < 23) {
+        if (hour >= 17 && hour < 24) {
             isItOpenSeattle.textContent = 'OPEN';
         } else {
             isItOpenSeattle.textContent = 'CLOSED';
         }
     }
      else {
-        if (hour >= 15 && hour < 22) {
+        if (hour >= 16 && hour < 23) {
             isItOpenSeattle.textContent = 'OPEN';
         } else {
             isItOpenSeattle.textContent = 'CLOSED';
