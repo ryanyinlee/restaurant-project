@@ -19,6 +19,7 @@ function renderChart() {
                 label: 'Foot Traffic',
                 backgroundColor: '#D17C47',
                 hoverBackgroundColor: '#EBD065',
+                rotation:1,
                 data : busyAmountArray,
             },]
         },
