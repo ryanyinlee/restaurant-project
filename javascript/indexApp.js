@@ -23,11 +23,27 @@ function renderChart() {
             },]
         },
         options: {
+            responsive: true,
             scales: {
                 yAxes: [{
                     ticks: {
-                        labels: ['nearlyempty', 'not busy', 'less busy than usual', 'as busy as usual', 'busier than usual', 'very busy'],
-                        beginAtZero: true
+                        beginAtZero: true,
+                        callback: function(label) {
+                        switch (label) {
+                            case 0:
+                                return 'nearlyempty';
+                            case 1:
+                                return 'not busy';
+                            case 2:
+                                return 'less busy than usual';
+                            case 3:
+                                return 'as busy as usual';
+                            case 4:
+                                return 'busier than usual';
+                            case 5:
+                                return 'very busy';
+                        }
+                    }
                     }
                 }]
             }
