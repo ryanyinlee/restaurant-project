@@ -16,6 +16,9 @@ function renderChart() {
         data: {
             labels: businessHoursArray,
             datasets: [{
+                label: 'Foot Traffic',
+                backgroundColor: '#D17C47',
+                hoverBackgroundColor: '#EBD065',
                 data : busyAmountArray,
             },]
         },
@@ -23,6 +26,7 @@ function renderChart() {
             scales: {
                 yAxes: [{
                     ticks: {
+                        labels: ['nearlyempty', 'not busy', 'less busy than usual', 'as busy as usual', 'busier than usual', 'very busy'],
                         beginAtZero: true
                     }
                 }]
