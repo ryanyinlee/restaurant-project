@@ -29,16 +29,7 @@ function clickSave(event) {
     console.log(localStorage);
 
     document.forms['menuSubmit'].reset(); // Clears the form for new entry.
-    storeMenu();
-
-}
-
-
-
-// Event listener submit.
-function checkForSubmit() {
-    const clickLocation = document.getElementById('menuSubmitButton');
-    clickLocation.addEventListener('click', clickSave);
+    
 
 }
 
@@ -51,6 +42,19 @@ function clearTemp() {
 }
 
 
+function deleteStorage() {
+
+    //confirm('Would you like to remove the additional menu items?');
+    if (confirm('Would you like to remove the additional menu items?') === true) {
+        localStorage.clear();
+        alert('Additional menu items deleted.');
+    } else {
+        alert('Nothing was removed.');
+    }
+    
+    
+} 
+
 // localStorage for new input. Stringifies it.
 function storeMenu() {
 
@@ -61,22 +65,43 @@ function storeMenu() {
 // Summon from local storage and parse it back into an object.
 function loadMenu(event) {
     event.preventDefault();
-    console.log('this recreate button were pushed');
     
-    const menuItems = JSON.parse(localStorage.getItem('menuSave')); // || []
-    console.log('menuItems: ' + menuItems);
-    console.log(menuItems[0]);
+    loadFromSave(); 
+    clearTemp();// Clears the preview to add the new items.
+    renderList();// Renders that list again.
     
-    for (let i = 0; i < menuItems.length; i += 1) {
-        new MenuObject(menuItems[i].name, menuItems[i].description, menuItems[i].price);
-    }
-
-    
-     
-  
-
 
 }
+
+function loadFromSave() {
+    const menuItems = JSON.parse(localStorage.getItem('menuSave')); 
+    if (menuItems) {
+        
+        for (let i = 0; i < menuItems.length; i += 1) {
+            new MenuObject(menuItems[i].name, menuItems[i].description, menuItems[i].price);
+        }
+    }
+    else {
+        alert('Nothing saved currently.');
+    }
+    renderList();
+}
+
+// Button to activate the save function separately.
+function saveMenu(event) {
+
+    if (confirm('Would you like to SAVE the additional menu items?') === true) {
+        storeMenu();
+        alert('Additional menu items SAVED.');
+    } else {
+        alert('Nothing was saved.');
+    }
+    
+    
+
+}
+
+
 
 
 
@@ -97,25 +122,38 @@ function renderList() {
         ulElem.appendChild(liElemDesc);
         liElemDesc.textContent = "  " + menuAdd.description;
     }
-
-
 }
-
 
 // Method to remove one item from the menu array.
 MenuObject.prototype.removeItem = function (itemIndex) {
-
     MenuObject.all.splice(itemIndex, 1);
 }
 
 
-function recreateButton() {
+// === BUTTON CLICKS BELOW ===
+// Event listener submit.
+function checkForSubmit() {
+    const clickLocation = document.getElementById('menuSubmitButton');
+    clickLocation.addEventListener('click', clickSave);
+}
 
+function checkForSave() {
+    const saveLocation = document.getElementById('saveMenuButton');
+    saveLocation.addEventListener('click', saveMenu);
+}
+
+function recreateButton() {
     const recreateLocation = document.getElementById('recreateMenuButton');
     recreateLocation.addEventListener('click', loadMenu);
-    
-
 }
+
+function checkForDelete() {
+    const removeLocation = document.getElementById('removeMenuButton');
+    removeLocation.addEventListener('click', deleteStorage);
+}
+
+// === BUTTON CLICKS ABOVE ===
+
 
 
 
@@ -130,7 +168,9 @@ function recreateButton() {
 // Starting Functions
 
 checkForSubmit();
+checkForSave();
 recreateButton();
+checkForDelete();
 // Renders the chart.
 
 
