@@ -11,7 +11,7 @@ function renderChart() {
     
     const ctx = document.getElementById('busy-chart').getContext('2d');
     const imageChart = new Chart(ctx, {
-        type: 'bar',
+        type: 'line',
 
         data: {
             labels: businessHoursArray,
