@@ -1,0 +1,38 @@
+#topLogo {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+
+nav {
+    display: block;
+    background: linear-gradient(#77B5BB, #37686d);
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav a {
+    position: relative;
+    color: #CAE2D9;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    transition: .2s ease-in-out;
+    
+}
+
+nav a:hover {
+    color: #F7F7F2;
+    font-size: 10.5pt;
+}
+
+body {
+    color: #5B3B20;
+    min-height: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-image: url(../images/toastyBack.png);
+}
