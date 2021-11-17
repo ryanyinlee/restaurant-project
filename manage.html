@@ -22,10 +22,10 @@
         <h1 class>Toasty's Cafe Management Page</h1><br>
         <img src="images/toastysCafeLogoRust.png" id="topLogo" alt="alt image of logo" srcset="">
         <nav>
-        
+            <a id='link' href="index.html">Home</a>
             <a id='link' href="locations.html">Locations</a>
             <a id='link' href="menu.html">Menu</a>
-            <a id='link' href="manage.html">Employee Portal</a>
+            
        
         </nav>
         
@@ -50,9 +50,17 @@
 
           </form>
 
+          <form id ="saveMenu">
+            <input id="saveMenuButton" type="submit" value="Save Created Menu">
+        </form><br>
+
           <form id ="recreateMenu">
               <input id="recreateMenuButton" type="submit" value="Restore Saved Menu">
           </form>
+          <br>
+          <form id ="removeMenu">
+            <input id="removeMenuButton" type="submit" value="Delete Saved Menu">
+        </form>
         
     
     </main>
