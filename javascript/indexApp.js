@@ -2,7 +2,7 @@
 function renderChart() {
 
     const businessHoursArray = ['8am','9am','10am','11am','12pm','1pm','2pm','3pm'];
-    const busyAmountArray = [3,5,4,3,2,2,3,4];
+    const busyAmountArray = [3,5,3,2,4,3,3,1];
     const yLabels = {
         0: 'nearly empty', 1: 'not busy', 2: 'less busy than usual', 3: 'as busy a usual', 4: 'busier than usual', 5: 'very busy'
     }
@@ -17,9 +17,12 @@ function renderChart() {
             labels: businessHoursArray,
             datasets: [{
                 label: 'Foot Traffic',
-                backgroundColor: '#D17C47',
-                hoverBackgroundColor: '#EBD065',
-                rotation:1,
+                borderColor: '#77B5BB',
+                backgroundColor: 'transparent',
+                hoverBackgroundColor: '#77B5BB',
+                lineTension: 0.3,
+                borderWidth: 15,
+                showLine: true,
                 data : busyAmountArray,
             },]
         },
