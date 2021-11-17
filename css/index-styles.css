@@ -51,7 +51,6 @@ nav {
 a {
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-right: 1rem;
     
 }
 
@@ -66,5 +65,18 @@ footer {
     text-align: center;
 }
 
+#busy-chart-section {
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 
+}
+
+canvas{
+    width:800px !important;
+    height:500px !important;
+  
+  }
 
