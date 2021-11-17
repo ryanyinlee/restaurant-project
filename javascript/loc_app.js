@@ -19,7 +19,7 @@ function openYetSeattle() {
             isItOpenSeattle.textContent = 'CLOSED';
         }
     }
-     else {
+    else {
         if (hour >= 16 && hour < 23) {
             isItOpenSeattle.textContent = 'OPEN';
         } else {
@@ -97,3 +97,23 @@ openYetAustin();
 openYetTampa();
 openYetChicago();
 openYetBoston();
+
+
+function letMeIn() {
+    for (let i = 0; i < 3; i += 1) {
+        let userName = prompt('Username:');
+        if (userName == 'YumYum') {
+            for (let i = 0; i < 3; i += 1) {
+                let passWord = prompt('Password:');
+                if (passWord == 'ToastysRules!') {
+                    break;
+                } else {
+                    alert('Wrong Password');
+                }
+            }
+        } else {
+            alert('Wrong Username');
+        }
+        location = 'index.html';
+    }
+}
