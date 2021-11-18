@@ -68,6 +68,20 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url(../images/toastyFoot.png);
+
+}
+
+#indexphotos {
+   align-items: flex;
+   display: flex;
+   
+}
+
+#indexphotos-img {
+    height: auto; 
+    width: auto; 
+    max-width: 100px; 
+    max-height: 100px;
 }
 
 .icon {    display: flex;    
