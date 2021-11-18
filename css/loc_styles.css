@@ -1,5 +1,8 @@
 * {
     font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 
 #topLogo {
@@ -273,6 +276,11 @@ td {
     margin: auto;
     text-align: center;
     width:10%
+}
+
+.main-page h4 {
+    color: #D8D5CB;
+    text-decoration: underline;
 }
 
 a {
