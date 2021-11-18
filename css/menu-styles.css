@@ -5,14 +5,10 @@
 }
 
 #topLogo {
-    display: inline-block;
-    height: 100px;
-    width: 100px;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    box-shadow:#1f3133 ;
 }
 
 header {
@@ -25,31 +21,19 @@ header {
     
 }
 nav {
-    display: block;
-    background: linear-gradient(#77B5BB, #37686d);
-    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    justify-content: space-between;
-    text-align: center;
 }
 
-nav a {
-    position: relative;
-    color: #CAE2D9;
-    font-family: 'Nunito', sans-serif;
-    font-size: 10pt;
-    transition: .2s ease-in-out;
+
+a {
+    padding-left: 2rem;
+    padding-right: 2rem;
     
 }
 
-nav a:hover {
-    color: #F7F7F2;
-    font-size: 10.5pt;
-}
-
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .wrapper {
@@ -88,10 +72,16 @@ body {
     transform: translateX(-50%);
 }
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.mmain {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sides {
+    padding-bottom: 1rem;
+}
+.beverages {
+    padding-bottom: 1rem;
 }
 
 .single-menu {
@@ -101,6 +91,10 @@ body {
     border-bottom: 1px solid white;
 }
 
+section {
+    align-content: center;
+    text-align: center;
+}
 footer {
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -111,6 +105,22 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url(../images/toastyFoot.png);
+}
+
+#hours {
+    padding-top: 3rem;
+}
+.main-page p {
+    display: inline-block;
+    color: #D8D5CB;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+.main-page h4 {
+    color: #D8D5CB;
+    text-decoration: underline;
 }
 
  

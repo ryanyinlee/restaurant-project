@@ -72,6 +72,14 @@ div {
     padding-top: 3rem;
 }
 
+.indexPhotos {
+    justify-content: space-around;
+}
+.indexPhotos img {
+    height: 400px;
+    width: 400px;
+}
+
 .main-page p {
     display: inline-block;
     color: #D8D5CB;
@@ -86,6 +94,14 @@ footer {
     padding-bottom: 1rem;
     align-content: center;
     text-align: center;
+}
+
+.main-page {
+    line-height: 0px;
+}
+
+.main-page h4 {
+    text-decoration: underline;
 }
 
 #busy-chart-section {
