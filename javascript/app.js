@@ -10,7 +10,9 @@ function MenuObject(name, description, price) {
 
 // Array stores menu objects.
 MenuObject.all = [];
-
+MenuObjectMainEntree.all = [];
+// MenuObjectSides.all = [];
+// MenuObjectBeverages.all = [];
 
 // This function accepts the submit form and puts it into the string
 function clickSave(event) {
@@ -96,8 +98,7 @@ function saveMenu(event) {
     } else {
         alert('Nothing was saved.');
     }
-    
-    
+       
 
 }
 
@@ -182,18 +183,19 @@ function MenuObjectMainEntree(name, description, price) {
 
 function mainEntreeHardList() {
     new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
-    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
-    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
-    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
-    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
-    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
-    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
+    new MenuObjectMainEntree('Waffles', 'with seasonal fruit and whipped cream..', 11.99);
+    new MenuObjectMainEntree('Big Breakfast ', 'served with pancakes, french toast, and 2 maple sausage with eggs.', 19.99);
+    new MenuObjectMainEntree('Toasty Omelet', 'with ham, sausage, spinach, mushrooms, cheddar, and home fried potatoes.', 13.99);
+    new MenuObjectMainEntree('Biscuits and Gravy ', 'with country sausage gravy and two eggs.', 14.99);
+    new MenuObjectMainEntree('Egg Benedict', 'with house-made english muffins topped with eggs.', 13.99);
+    new MenuObjectMainEntree('Chicken and Waffles', 'with fries and side of seasonal fruits.', 19.99);
 
 
 }
 
 mainEntreeHardList(); // Hardcode menu
 
+// Render Entrees
 function renderEntreeMenu() {
 
     const ulElem = document.getElementById('menuEntree');
