@@ -82,7 +82,7 @@ function loadFromSave() {
         }
     }
     else {
-        alert('Nothing saved currently.');
+        alert('No specials currently. Check back later!');
     }
     renderList();
 }
@@ -114,13 +114,17 @@ function renderList() {
     for (let i = 0; i < MenuObject.all.length; i += 1) {
         const menuAdd = MenuObject.all[i];
 
-        const liElemName = document.createElement('li');
+        const liElemName = document.createElement('h4');
         ulElem.appendChild(liElemName);
         liElemName.textContent = "  " + menuAdd.name + "  " + menuAdd.price;
 
-        const liElemDesc = document.createElement('li');
+        const liElemDesc = document.createElement('p');
         ulElem.appendChild(liElemDesc);
         liElemDesc.textContent = "  " + menuAdd.description;
+
+        const brElemDesc = document.createElement('br');
+        ulElem.appendChild(brElemDesc);
+        
     }
 }
 
