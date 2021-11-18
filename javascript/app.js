@@ -82,7 +82,7 @@ function loadFromSave() {
         }
     }
     else {
-        alert('Nothing saved currently.');
+        alert('No specials today.');
     }
     renderList();
 }
@@ -114,13 +114,17 @@ function renderList() {
     for (let i = 0; i < MenuObject.all.length; i += 1) {
         const menuAdd = MenuObject.all[i];
 
-        const liElemName = document.createElement('li');
+        const liElemName = document.createElement('h4');
         ulElem.appendChild(liElemName);
         liElemName.textContent = "  " + menuAdd.name + "  " + menuAdd.price;
 
-        const liElemDesc = document.createElement('li');
+        const liElemDesc = document.createElement('p');
         ulElem.appendChild(liElemDesc);
         liElemDesc.textContent = "  " + menuAdd.description;
+
+        const brElemDesc = document.createElement('br');
+        ulElem.appendChild(brElemDesc);
+        
     }
 }
 
@@ -155,16 +159,6 @@ function checkForDelete() {
 // === BUTTON CLICKS ABOVE ===
 
 
-
-
-
-
-
-//Test menu item
-//new MenuObject('French Fried Toast', 'avec queso con huevos', 12);
-// renderList();
-
-
 // Starting Functions
 
 checkForSubmit();
@@ -175,24 +169,48 @@ checkForDelete();
 
 
 
-// Code Storage Below ==============================================================================
-
 
 // Object constructor for specials.
 // MAKE SURE REGULAR WORKS FIRST
-function MenuObjectSpecial(name, description, price) {
+function MenuObjectMainEntree(name, description, price) {
     this.name = name;
     this.description = description;
     this.price = price;
-    MenuObjectSpecial.all.push(this);
+    MenuObjectMainEntree.all.push(this);
 }
 
 
-
-// Render function, gets filepath and name.
-MenuObject.prototype.render = function (side) {
-    const textElem = document.getElementById('menuAdd');
+function mainEntreeHardList() {
+    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
+    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
+    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
+    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
+    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
+    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
+    new MenuObjectMainEntree('Buttermilk Pancakes Platter', 'with bacon or maple sausage.', 14.99);
 
 
 }
 
+mainEntreeHardList(); // Hardcode menu
+
+function renderEntreeMenu() {
+
+    const ulElem = document.getElementById('menuEntree');
+
+    for (let i = 0; i < MenuObjectMainEntree.all.length; i += 1) {
+        const menuAdd = MenuObjectMainEntree.all[i];
+
+        const liElemName = document.createElement('h4');
+        ulElem.appendChild(liElemName);
+        liElemName.textContent = "  " + menuAdd.name + "  " + menuAdd.price;
+
+        const liElemDesc = document.createElement('p');
+        ulElem.appendChild(liElemDesc);
+        liElemDesc.textContent = "  " + menuAdd.description;
+
+        const brElemDesc = document.createElement('br');
+        ulElem.appendChild(brElemDesc);
+        
+    }
+}

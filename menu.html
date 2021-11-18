@@ -1,202 +1,156 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-    <script> 
-        window.onload = function loadLoad() { 
+    <script>
+        window.onload = function loadLoad() {
             loadFromSave();
-        } 
-    </script> 
-    
+            renderEntreeMenu();
+        }
+    </script>
+
     <title>Toasties</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/menu-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img src="images/toastysCafeLogoRust.png" id="topLogo" alt="alt image of logo" srcset="">
         <nav>
-        
-        <a id='link' href="index.html">Home</a>
-        <a id='link' href="locations.html">Locations</a>
-        <a id='link' href="user_pass.html">Employee Portal</a>
-   
-    </nav>
+
+            <a id='link' href="index.html">Home</a>
+            <a id='link' href="locations.html">Locations</a>
+            <a id='link' href="user_pass.html">Employee Portal</a>
+
+        </nav>
     </header>
-<section>
-    <div class="specials">
-        <div class="single-menu">
-            <div class="menu-content">
-            
-                <h3>Specials Today!</h3>
-       
-                <div id= "menuAdd"></div>
-            </div>
-        </div>
-    </div>
-    
-        </div>
-
-        <div class="mmain">
-            <h2>Main Entrée</h2>
-
-        </div>
-
-        <div class="menu">
+    <section>
+        <!-- SPECIALS -->
+        <div class="specials">
             <div class="single-menu">
                 <div class="menu-content">
-                    <h4>Buttermilk Pancakes Platter <span>14.99</span></h4>
-                    <p>with bacon or maple sausage.</p>
+
+                    <h3>Specials Today!</h3>
+                    <br>
+                    <div id="menuAdd"></div>
                 </div>
             </div>
         </div>
-        <div class="single-menu">
-            <div class="menu-content">
-                <h4>Waffles <span>11.99</span></h4>
-                <p>with seasonal fruit and whipped cream.</p>
+        
+
+        
+
+        <!-- ENTREES -->
+        <div class="menu">
+            <div class="mmain">
+                <h2>Main Entrée</h2>
+                <div id="menuEntree"></div>
             </div>
         </div>
-    </div>
-    <div class="single-menu">
-        <div class="menu-content">
-            <h4>Big breakfast <span>19.99</span></h4>
-            <p>served with pancakes, french toast, and 2 maple sausage with eggs.</p>
-        </div>
-    </div>
-    </div>
-    <div class="single-menu">
-        <div class="menu-content">
-            <h4>Toasty Omelet <span>13.99</span></h4>
-            <p>with ham, sausage, spinach, mushrooms, cheddar, and home fried potatoes.</p>
-        </div>
-    </div>
-    </div>
-    <div class="single-menu">
-        <div class="menu-content">
-            <h4>Buscuits and Gravy <span>14.99</span></h4>
-            <p>with country sausage gravy and two eggs.</p>
-        </div>
-    </div>
-    </div>
-    <div class="single-menu">
-        <div class="menu-content">
-            <h4>Egg Benedict <span>13.99</span></h4>
-            <p>with house-made english muffins topped with eggs.</p>
-        </div>
-    </div>
-    </div>
-    <div class="single-menu">
-        <div class="menu-content">
-            <h4>Chicken and Waffles <span>19.99</span></h4>
-            <p>with fries and side of seasonal fruits.</p>
-        </div>
-    </div>
-    </div>
-    <div class="single-menu">
-        <div class="menu-content">
-            <h4>Hashbrowns and Eggs <span>15.99</span></h4>
-            <p>with sausage links and bacon.</p>
-        </div>
-    </div>
-    </div>
 
-    <div class="mmain">
-        <h2>Sides</h2>
-    </div>
 
-    <div class="sides">
-        <div class="menu-content">
-            <h5>Homemade Muffin <span>3.99</span></h5>
+
+        <!-- SIDES -->
+        <div class="mmain">
+            <h2>Sides</h2>
+        </div>        
+        <div class="sides">
+            <div class="menu-content">
+                <h5>Homemade Muffin <span>3.99</span></h5>
+            </div>
         </div>
-    </div>
-    </div>
-    <div class="sides">
-        <div class="menu-content">
-            <h5>Yogurt and Seasonal Fruit <span>2.99</span></h5>
         </div>
-    </div>
-    </div>
-<div class="sides">
-    <div class="menu-content">
-        <h5>Homefried Potatoes <span>3.99</span></h5>
-    </div>
-</div>
-</div>
-<div class="sides">
-    <div class="menu-content">
-        <h5>Side of Pancakes <span>2.99</span></h5>
-    </div>
-</div>
-</div>
+        <div class="sides">
+            <div class="menu-content">
+                <h5>Yogurt and Seasonal Fruit <span>2.99</span></h5>
+            </div>
+        </div>
+        </div>
+        <div class="sides">
+            <div class="menu-content">
+                <h5>Homefried Potatoes <span>3.99</span></h5>
+            </div>
+        </div>
+        </div>
+        <div class="sides">
+            <div class="menu-content">
+                <h5>Side of Pancakes <span>2.99</span></h5>
+            </div>
+        </div>
+        </div>
 
-<div class="mmain">
-    <h2>Beverages</h2>
-    </div>
+        <div class="mmain">
+            <h2>Beverages</h2>
+        </div>
 
-<div class="beverages">
-    <div class="menu-content">
-        <h5>Juice <span>2.99</span></h5>
-    </div>
-</div>
-</div>
-<div class="beverages">
-    <div class="menu-content">
-        <h5>Coffeee <span>2.99</span></h5>
-    </div>
-</div>
-</div>
-<div class="beverages">
-    <div class="menu-content">
-        <h5>Soda <span>2.99</span></h5>
-    </div>
-</div>
-</div>
-</section>
+        <!-- BEVERAGES -->
+        <div class="beverages">
+            <div class="menu-content">
+                <h5>Juice <span>2.99</span></h5>
+            </div>
+        </div>
+        </div>
+        <div class="beverages">
+            <div class="menu-content">
+                <h5>Coffeee <span>2.99</span></h5>
+            </div>
+        </div>
+        </div>
+        <div class="beverages">
+            <div class="menu-content">
+                <h5>Soda <span>2.99</span></h5>
+            </div>
+        </div>
+        </div>
+    </section>
 
-<footer>
-</div>
-<div class="main-page">
+    <footer>
+        </div>
+        <div class="main-page">
             <h4 id='hours'>Hours</h4>
             <p>Weekday Brunch 8am - 3pm</p>
             <br>
             <p>Weekend Brunch 9am - 4pm</p>
         </div>
-    </div>
-    <div class="main-page">
-      <h4>Main Location</h4>
-      <p>802 Cedar Steet</p>
-      <br>
-      <p>Seattle WA 98121</p>
-  </div>
-  <div class="main-page">
-    <h4>Contact</h4>
-    <p>info@toastyscafe.com</p>
-    <br>
-    <p>(206)411-4444</p>
-</div>
-<div class="icon">
-    <ul>
-      <img src="images/fb-icon.png">
-    </ul>
-    <ul>
-      <img src="images/twit-icon.png">
-    </ul>
-    <ul>
-      <img src="images/rss-icon.png">
-    </ul>
-    <ul>
-      <img src="images/mail-icon.png">
-    </ul>
-  </div>
-  <input hidden id="recreateMenuButton" type="submit" value="Restore Saved Menu">
-  <input hidden id="menuSubmitButton" type="submit" value="Submit">
-  <input hidden id="saveMenuButton" type="submit" value="Save Created Menu">
-  <input hidden id="removeMenuButton" type="submit" value="Delete Saved Menu">
-</footer>
-<script src="javascript/app.js"></script>
+        </div>
+        <div class="main-page">
+            <h4>Main Location</h4>
+            <p>802 Cedar Steet</p>
+            <br>
+            <p>Seattle WA 98121</p>
+        </div>
+        <div class="main-page">
+            <h4>Contact</h4>
+            <p>info@toastyscafe.com</p>
+            <br>
+            <p>(206)411-4444</p>
+        </div>
+        <div class="icon">
+            <ul>
+                <img src="images/fb-icon.png">
+            </ul>
+            <ul>
+                <img src="images/twit-icon.png">
+            </ul>
+            <ul>
+                <img src="images/rss-icon.png">
+            </ul>
+            <ul>
+                <img src="images/mail-icon.png">
+            </ul>
+        </div>
+        <input hidden id="recreateMenuButton" type="submit" value="Restore Saved Menu">
+        <input hidden id="menuSubmitButton" type="submit" value="Submit">
+        <input hidden id="saveMenuButton" type="submit" value="Save Created Menu">
+        <input hidden id="removeMenuButton" type="submit" value="Delete Saved Menu">
+    </footer>
+    <script src="javascript/app.js"></script>
 </body>
+
 </html>
