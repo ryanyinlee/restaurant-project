@@ -37,6 +37,8 @@ function renderChart() {
                         drawBorders: false
                     },
                     ticks: {
+                        fontSize: 20,
+                        fontColor: '#5B3B20',
                         beginAtZero: true,
                         callback: function (label) {
                             switch (label) {
@@ -55,9 +57,12 @@ function renderChart() {
                             }
                         }
                     }
-
                 }],
                 xAxes: [{
+                    ticks: {
+                        fontSize: 20,
+                        fontColor: '#5B3B20'
+                    },
                     gridLines: {
                       display: false,
                     },
@@ -66,7 +71,7 @@ function renderChart() {
             tooltips: {
                 backgroundColor: '#D17C47',
                 displayColors: false,
-                bodyFontSize: 14,
+                bodyFontSize: 20,
             }
         }
     })
